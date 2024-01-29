@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap');
+
+* { 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-image: url('fondo.jpg');
+    
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Georama', sans-serif;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 15px;
+    border: 1px solid darkgray;
+}
+
+.calculadora { 
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    font-size: 2.0rem;
+    border: 1px solid darkgray;
+}
+
+.pantalla{
+    padding: 25px 15px;
+    width: 100%;
+    text-align: right;
+    background-image: none; /* Anula la imagen de fondo */
+    background-color: rgb(69, 208, 230); /* Establece el color de fondo deseado para la pantalla de la calculadora */
+    border: 1px solid gray;
+    overflow-x: visible;
+}
+
+.bordesde-teclado {
+    display: flex;
+    width: 100%;
+}
+
+.numerosde-teclado {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.botonde-teclado {
+    width: 25%;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    background: rgb(164, 223, 240);
+    border: 1px solid darkgray;
+}
+
+.botonde-teclado:hover {
+    filter:brightness(80%);
+    transition: filter .25s;
+}
+
+.botonde-teclado.borrar {
+    width: 50%;
+    background: red;
+}
+
+.botonde-teclado.cero{
+    width: 50%;
+}
+
+.botonde-teclado.porciento{
+    background: goldenrod;
+}
+
+
+
+.botonde-teclado.green {
+    background: rgb(51, 202, 228);
+}
